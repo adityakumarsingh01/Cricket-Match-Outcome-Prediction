@@ -149,14 +149,14 @@ Deployment
 
 ## Current Status
 
-**Unit 1:** Environment and Project Setup — Completed
+**Unit 1:** Environment and Project Setup - Completed
 
-**Unit 2:** Logging, Exception Handling & Git Essentials — In Progress/Completed
+**Unit 2:** Logging, Exception Handling & Git Essentials - Completed
 
-**Unit 3:** Experiment Tracking & Pipeline Structuring — Upcoming
+**Unit 3:** Experiment Tracking & Pipeline Structuring - Upcoming
 
-**Unit 4:** Data Ingestion & Data Transformation — Upcoming
+**Unit 4:** Data Ingestion & Data Transformation - Upcoming
 
-**Unit 5:** Model Training & Hyperparameter Tuning — Upcoming
+**Unit 5:** Model Training & Hyperparameter Tuning - Upcoming
 
-**Unit 6:** Prediction Pipeline & Model Deployment — Upcoming
+**Unit 6:** Prediction Pipeline & Model Deployment - Upcoming
