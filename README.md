@@ -52,7 +52,7 @@ Cricket-Match-Outcome-Prediction/
 Clone this repository:
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/adityakumarsingh01/Cricket-Match-Outcome-Prediction.git
 cd Cricket-Match-Outcome-Prediction
 ```
 
