@@ -83,25 +83,17 @@ pip install -r requirements.txt
 ## Update 1
 
 **Environment Setup** is done
-
 **Project Structure** is defined
-
 **Necessary files** required till now are created
-
 **Virtual Environment** is created and configured
-
 **Git Repository** is initialized and connected with GitHub
 
 ## Update 2
 
 **Logging** is implemented
-
 **Custom Exception Handling** is implemented
-
 **Data Ingestion** is implemented with logging and exception handling
-
 **Git Branching & Pull Request Workflow** is completed
-
 **Feature Branch** is created and merged into `main`
 
 ## Project Objective
