@@ -128,27 +128,13 @@ Deployment
 
 ## Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
-* Flask
-* Git
-* GitHub
+Python | Pandas | NumPy | Scikit-learn | Matplotlib | Seaborn | Jupyter Notebook | Flask | Git | GitHub
 
 ## Current Status
 
-**Unit 1:** Environment and Project Setup - Completed
-
-**Unit 2:** Logging, Exception Handling & Git Essentials - Completed
-
-**Unit 3:** Experiment Tracking & Pipeline Structuring - Upcoming
-
-**Unit 4:** Data Ingestion & Data Transformation - Upcoming
-
-**Unit 5:** Model Training & Hyperparameter Tuning - Upcoming
-
-**Unit 6:** Prediction Pipeline & Model Deployment - Upcoming
+**Unit 1:** Environment and Project Setup - Completed  
+**Unit 2:** Logging, Exception Handling & Git Essentials - Completed  
+**Unit 3:** Experiment Tracking & Pipeline Structuring - Upcoming  
+**Unit 4:** Data Ingestion & Data Transformation - Upcoming  
+**Unit 5:** Model Training & Hyperparameter Tuning - Upcoming  
+**Unit 6:** Prediction Pipeline & Model Deployment - Upcoming  
