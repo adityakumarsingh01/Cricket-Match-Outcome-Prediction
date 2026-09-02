@@ -166,7 +166,7 @@ Used to capture non-linear relationships and complex interactions between match-
 
 ### 1. Clone the Repository
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/adityakumarsingh01/Cricket-Match-Outcome-Prediction.git
 cd Cricket-Match-Outcome-Prediction
 ```
 
@@ -236,4 +236,4 @@ python -c "from src.components.model_trainer import ModelTrainer; # (Execution l
 *This project is being developed as part of the **Predictive Analytics Project** coursework.*
 
 **Author:** Aditya Kumar Singh  
-*Computer Science & Engineering Student*
+*B.Tech. (Hons.) (CSE- Data Science and Data Engineering) Student*
