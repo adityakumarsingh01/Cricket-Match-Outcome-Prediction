@@ -1,140 +1,106 @@
-# IPL Cricket Match Outcome Prediction
+# 🏏 Cricket Match Outcome Prediction
 
-This project's main goal is to predict the outcome of an IPL cricket match using historical match information such as team performance, toss result, venue, and other relevant match statistics. The project follows an end-to-end machine learning workflow, from data ingestion and experimentation to model training and deployment.
+An end-to-end machine learning project that predicts whether the batting team will win or lose an IPL cricket match based on the current state of a run chase.
 
-## Dataset
+The project uses live match-state features such as batting team, bowling team, venue, runs remaining, balls remaining, wickets, current run rate, required run rate, and target runs to build a binary classification model.
 
-The project uses the **IPL Ball-by-Ball Dataset** from Kaggle.
+---
 
-The dataset contains historical IPL cricket match and ball-by-ball information that will be used to understand team performance and develop features for predicting match outcomes.
+## 📌 Project Overview
 
-The dataset is kept locally under the `data/raw/` directory and is not included in this GitHub repository.
+### Problem Statement
 
-## Project Structure
+Cricket match outcomes depend on several factors such as the teams involved, venue, target score, remaining runs, remaining balls, wickets, and scoring rate.
+
+This project aims to build a machine learning system that predicts the outcome of an IPL cricket match from the current state of the match.
+
+### What Does the Project Predict?
+
+The model predicts:
+
+- `0` → Batting team loses
+- `1` → Batting team wins
+
+### Why Does It Matter?
+
+A cricket match changes continuously after every delivery. By using the current match state, a machine learning model can estimate the likelihood of the batting team winning.
+
+This can be useful for:
+
+- Live match analytics
+- Win-probability systems
+- Sports analytics
+- Decision-support applications
+- Demonstrating real-time predictive modelling
+
+---
+
+# 🎯 Project Objectives
+
+The main objectives of this project are:
+
+- Perform exploratory data analysis on IPL ball-by-ball data.
+- Understand the factors influencing match outcomes.
+- Clean and preprocess the dataset.
+- Build a reusable machine learning pipeline.
+- Handle numerical and categorical features separately.
+- Train multiple classification models.
+- Evaluate models using multiple performance metrics.
+- Compare model performance.
+- Select the best-performing model.
+- Save the trained model and preprocessing pipeline.
+- Build a prediction pipeline for future deployment.
+- Develop a web-based interface for model inference.
+
+---
+
+# 📊 Dataset
+
+## Dataset Name
+
+**IPL Ball-by-Ball Dataset**
+
+## Dataset Source
+
+**Kaggle**
+
+The project uses IPL ball-by-ball match data containing information about the state of a batting team's run chase.
+
+### Dataset Features
+
+| Feature | Description |
+|---|---|
+| `batting_team` | Team currently batting |
+| `bowling_team` | Team currently bowling |
+| `city` | Match venue/city |
+| `runs_left` | Runs remaining to win |
+| `balls_left` | Legal balls remaining |
+| `wickets` | Wickets remaining |
+| `target_runs` | Target score |
+| `cur_run_rate` | Current run rate |
+| `req_run_rate` | Required run rate |
+
+### Target Variable
+
+| Value | Meaning |
+|---|---|
+| `0` | Batting team loses |
+| `1` | Batting team wins |
+
+### Important Dataset Note
+
+The provided dataset does **not** contain an explicit toss-result column.
+
+Therefore, toss information is not artificially added to the model.
+
+The current model uses only features actually available in the dataset.
+
+---
+
+# 📈 Dataset Statistics
+
+The original dataset contains approximately:
 
 ```text
-Cricket-Match-Outcome-Prediction/
-│
-├── data/
-│   └── raw/
-│       └── IPL Dataset
-│
-├── notebooks/
-│   └── 01_eda.ipynb
-│
-├── src/
-│   ├── __init__.py
-│   ├── logger.py
-│   ├── exception.py
-│   │
-│   ├── components/
-│   │   ├── __init__.py
-│   │   ├── data_ingestion.py
-│   │   ├── data_transformation.py
-│   │   └── model_trainer.py
-│   │
-│   └── pipeline/
-│       ├── __init__.py
-│       ├── train_pipeline.py
-│       └── predict_pipeline.py
-│
-├── artifacts/
-│
-├── logs/
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
-## Setup
-
-Clone this repository:
-
-```bash
-git clone https://github.com/adityakumarsingh01/Cricket-Match-Outcome-Prediction.git
-cd Cricket-Match-Outcome-Prediction
-```
-
-Create a virtual environment:
-
-```bash
-python -m venv venv
-```
-
-### Activate in Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### Activate in MacOS/Linux
-
-```bash
-source venv/bin/activate
-```
-
-Install the required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Update 1
-
-**Environment Setup** is done  
-**Project Structure** is defined  
-**Necessary files** required till now are created  
-**Virtual Environment** is created and configured  
-**Git Repository** is initialized and connected with GitHub  
-
-## Update 2
-
-**Logging** is implemented  
-**Custom Exception Handling** is implemented  
-**Data Ingestion** is implemented with logging and exception handling  
-**Git Branching & Pull Request Workflow** is completed  
-**Feature Branch** is created and merged into `main`  
-
-## Project Objective
-
-The objective of this project is to build a machine learning system that can predict the winner of an IPL cricket match based on relevant historical match information.
-
-The project will gradually progress through:
-
-```text
-Data Ingestion
-      ↓
-Data Exploration
-      ↓
-Data Preprocessing
-      ↓
-Feature Engineering
-      ↓
-Model Training
-      ↓
-Model Evaluation
-      ↓
-Hyperparameter Tuning
-      ↓
-Best Model Selection
-      ↓
-Prediction Pipeline
-      ↓
-Web Application
-      ↓
-Deployment
-```
-
-## Technologies Used
-
-Python | Pandas | NumPy | Scikit-learn | Matplotlib | Seaborn | Jupyter Notebook | Flask | Git | GitHub
-
-## Current Status
-
-**Unit 1:** Environment and Project Setup - Completed  
-**Unit 2:** Logging, Exception Handling & Git Essentials - Completed  
-**Unit 3:** Experiment Tracking & Pipeline Structuring - Upcoming  
-**Unit 4:** Data Ingestion & Data Transformation - Upcoming  
-**Unit 5:** Model Training & Hyperparameter Tuning - Upcoming  
-**Unit 6:** Prediction Pipeline & Model Deployment - Upcoming  
+72,413 rows
+13 columns
